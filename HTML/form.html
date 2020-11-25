@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head></head>
+    <body>
+        <form method="POST" action="http://www.site.com/register">
+
+        <label>First Name: <br>
+            <input type="text" name="firstname" id="firstname">
+        </label><br>
+        <label>Last Name: <br>
+            <input type="text" name="lastname" id="lastname">
+        </label><br>
+        <label>Birthday: <br>
+            <input type="date" name="birthday" id="birthday">
+        </label><br>
+        <label>Email: <br>
+            <input type="email" name="email" id="email">
+        </label><br>
+        <label>New Username: <br>
+            <input type="text" name="username" id="Username">
+        </label><br>
+        <label>New Password: <br>
+            <input type="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" name="pass" id="pass">
+        </label><br>
+        <label>Retype Password: <br>
+            <input type="password"  pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" name="pass" id="pass">
+        </label><br>
+        <label> <input type="checkbox" value="Yes"> I would like to subscribe to newsletters</label><br>
+        <input type="submit" value="Submit">
+
+        </form>
+
+    </body>
+</html>

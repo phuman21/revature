@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css?family=Bad+Script');
+
+body {
+  background-image: url('aniviabackground.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+h1 {
+  text-align: center;
+  position: relative;
+  font-family: 'Bad Script';
+  text-transform: uppercase;
+  font-size: 2em;
+  letter-spacing: 4px;
+  overflow: hidden;
+  background: linear-gradient(90deg, rgb(218, 219, 228), rgb(51, 129, 202), rgb(19, 76, 192));
+  background-repeat: no-repeat;
+  background-size: 80%;
+  animation: animate 3s linear infinite;
+  -webkit-background-clip: content-box;
+  background-clip: text;
+  -webkit-text-fill-color: rgba(255, 255, 255, 0);
+}
+
+div > p#life {
+  color: green;
+  font-family: 'Bad Script';
+  font-weight: bolder;
+  letter-spacing: 3px;
+  text-align: center;
+  text-decoration: underline;
+  font-size: 200%;
+}
+
+div > p#interests {
+  color: purple;
+  font-family: 'Bad Script';
+  font-weight: bolder;
+  letter-spacing: 3px;
+  text-align: center;
+  text-decoration: underline;
+  font-size: 200%;
+}
+
+div > p#dreams {
+  color: gray;
+  font-family: 'Bad Script';
+  font-weight: bolder;
+  text-align: center;
+  text-decoration: underline;
+  letter-spacing: 3px;
+  font-size: 200%;
+
+}
+
+div > p#body {
+  color: whitesmoke;
+  text-align: center;
+  font-family: cursive;
+}
+
+.center {
+  border-radius: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 540px;
+  height: auto;
+}
+
+#stroke{
+	color: white;
+	font-size: 47px;
+	-webkit-text-stroke: 1px whitesmoke;
+	text-shadow: 0px 2px 4px blue;
+}
+
+hr.line {
+  overflow: visible;
+  padding: 0;
+  border: none;
+  border-top: medium double gray;
+  color: whitesmoke;
+  text-align: center;
+}
+hr.line:after {
+  content: "§";
+  display: inline-block;
+  position: relative;
+  top: -0.7em;
+  font-size: 1.5em;
+  padding: 0 0.25em;
+}
+
+@keyframes animate {
+  0% {
+    background-position: -500%;
+  }
+  100% {
+    background-position: 500%;
+  }
+}

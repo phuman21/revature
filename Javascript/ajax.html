@@ -1,0 +1,25 @@
+<script>
+    var pokemon;
+
+// var xhr = new XMLHttpRequest();
+
+// xhr.onreadystatechange = function() {
+//     if(xhr.readyState == 4) {
+//         pokemon = xhr.responseText;
+
+//         console.log(pokemon);
+//     }
+// }
+
+// xhr.open("GET", "https://pokeapi.co/api/v2/pokemon/ditto");
+// xhr.send();
+
+fetch("https://pokeapi.co/api/v2/pokemon/ditto")
+    .then(response => response.json())
+    .then(data => console.log(data));
+
+    console.log(response.name);
+
+</script>
+
+<html></html>
