@@ -1,0 +1,77 @@
+
+<p>Choose where you want to fly from:</p>
+
+<div *ngFor="let from of data.from; let i = index">
+    <img [src]="images[i]" width="50px" height="50px">
+    <br>
+    <input type="button" [value]="from.name" (click)="chooseFlight(from.name, i)">
+    <br><br>
+</div>
+
+<br><br><br>
+
+<div *ngIf="seattle">
+    <p>Choose where you want to fly to:</p>
+    <div *ngFor="let to of connectedCities; let i = index">
+        <img [src]="findImage(to.name)">
+        <input type="button" [value]="to.name" (click)="flightTo(to.name,  i)">
+    </div>
+</div>
+<div *ngIf="losangeles">
+    <p>Choose where you want to fly to:</p>
+    <div *ngFor="let to of connectedCities; let i = index">
+        <input type="button" [value]="to.name" (click)="flightTo(to.name,  i)">
+    </div>
+</div>
+<div *ngIf="stlouis">
+    <p>Choose where you want to fly to:</p>
+    <div *ngFor="let to of connectedCities; let i = index">
+        <input type="button" [value]="to.name" (click)="flightTo(to.name,  i)">
+    </div>
+</div>
+<div *ngIf="houston">
+    <p>Choose where you want to fly to:</p>
+    <div *ngFor="let to of connectedCities; let i = index">
+        <input type="button" [value]="to.name" (click)="flightTo(to.name,  i)">
+    </div>
+</div>
+<div *ngIf="newyork">
+    <p>Choose where you want to fly to:</p>
+    <div *ngFor="let to of connectedCities; let i = index">
+        <input type="button" [value]="to.name" (click)="flightTo(to.name,  i)">
+    </div>
+</div>
+<div *ngIf="tampa">
+    <p>Choose where you want to fly to:</p>
+    <div *ngFor="let to of connectedCities; let i = index">
+        <input type="button" [value]="to.name" (click)="flightTo(to.name,  i)">
+    </div>
+</div>
+<br><br>
+
+<div>
+    <h2>Ticket Price</h2>
+    <p>From: {{fromCity}}</p>
+    <p>To: {{toCity}} </p>Costs: {{price}}
+</div>
+    
+<!-- <div>
+    <input type="button" value="Los Angels" (click)="reviewFlight()">
+</div>
+
+<div>
+    <input type="button" value="St. Louis" (click)="reviewFlight()" >
+</div>
+
+<div>
+    <input type="button" value="Houston" (click)="reviewFlight()" >
+</div>
+
+<div>
+    <input type="button" value="New York" (click)="reviewFlight()" >
+</div>
+
+<div>
+    <input type="button" value="Tampa" (click)="reviewFlight()" >
+</div> -->
+
