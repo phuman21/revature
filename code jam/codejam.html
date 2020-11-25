@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+        <link rel="stylesheet" href="codejam.css">
+    </head>
+    <body class="text-center">
+        <header>
+            <img src="clipart931140.png" height="100px">
+            <hr>
+        </header>
+        <script src="codejam.js"></script>
+        <div>
+            <input type="text" id="breed" placeholder="Dog Breed">
+            <button onclick="dogSearch()">Random Search</button>
+            <br><br>
+            <button onclick="dogSearch('labrador')" value="labrador" id="labrador">Random Labrador</button>
+            <button onclick="dogSearch('bulldog')" value="bulldog" id="bulldog">Random Bulldog</button>
+            <button onclick="dogSearch('collie')" value="collie" id="collie">Random Collie</button>
+            <br><br>
+            <button onclick="listAll(false)">List All Breeds</button>
+            <button onclick="listAll(true)">Random All Breeds</button>
+        </div>
+
+        <hr class = "sep-2">
+        <div class="text-danger"> </div>
+        <div id="dog-photo">
+
+        </div>
+    </body>
+</html>

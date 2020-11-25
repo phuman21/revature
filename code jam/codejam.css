@@ -1,0 +1,29 @@
+table {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+th {
+    border: thin solid black;
+    background-color: antiquewhite;
+}
+
+td {
+    border: thin solid black;
+    background-color: beige;
+    padding-left: 2px;
+    padding-right: 2px;
+}
+
+hr {
+    border: 0; 
+    height: 1px; 
+    background-image: linear-gradient(to right, #f0f0f0, #00b9ff, #59d941, #f0f0f0);
+  }
+
+body {
+    background-image: url("https://r1.ilikewallpaper.net/iphone-8-wallpapers/download/29735/Cute-Puppy-Dog-Pet-iphone-8-wallpaper-ilikewallpaper_com.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
