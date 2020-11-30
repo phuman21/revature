@@ -1,0 +1,34 @@
+<div class="card-container">
+    <input type= "text" placeholder="Search Pokemon" [(ngModel)]="PokemonName">
+    <input type="button" value="Search" (click)="getPokemon()">
+</div>
+
+<div *ngIf="searcherror" class="error">
+    <br>
+    This isnt a pokemon!
+</div>
+
+<div *ngIf="searched" class="card-container2">
+    <div class="tabs1"> 
+        <input type="button" value="Show Abilities" (click)="changeAbility()">
+        <input type="button" value="Show Moves" (click)="changeMoves()">
+        <input type="button" value="Show Sprites" (click)="changeSprites()">
+    </div> <br>
+    <div class="tabs2" style="text-align: center;">
+        <div *ngIf ="showAbility" >
+            <div *ngFor="let x of pokemonAbility"> <p style="text-align: center; font-size: large;">  <span class="moves">Ability: </span> {{x.ability.name}}</p>  </div>
+        </div>
+        <div *ngIf ="showMoves">
+            <div *ngFor="let x of pokemonMove"> <p style="text-align: center; font-size: large;"> <span class="moves">Move: </span> {{x.move.name}}</p> </div>
+        </div>
+        <div *ngIf ="showSprites">
+            <div style="align-items: center;">
+                <div class="imgclass">Front Sprites: <img [src]="pokemonSprites.front_default"> </div>
+                <div class="imgclass">Front Shiny: <img [src]="pokemonSprites.front_shiny"> </div>
+                <div class="imgclass">Back Sprites: <img [src]="pokemonSprites.back_default"> </div>
+                <div class="imgclass">Back Shiny: <img [src]="pokemonSprites.back_shiny"> </div>
+            </div>
+        </div>
+    </div>
+</div>
+
